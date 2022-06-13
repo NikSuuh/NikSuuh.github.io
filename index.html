@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pre Angular</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav -->
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 col-sm-8 d-flex justify-content-evenly justify-content-sm-start">
+                <img class="APLogo text-white" src="./src/img/arg-programa-logo.png" width="120px" height="auto"><p class="YoProgramo_txt text-white">#YoProgramo</p>
+            </div>
+            <div class="drop-container dropdown col-12 col-sm-4 d-flex justify-content-sm-end justify-content-center align-items-sm-center btn-group" height="50px" width="50px">
+                <button type="button" class="btn btn-success text-nowrap">Iniciar sesion</button> 
+                <button class="boton-dropdown btn btn-dark btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mis Redes
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><img src="./src/img/icons/instagram.svg" height="30px" width="auto"> <a href="https://www.instagram.com/niksuuh.x/">Instagram</a></li>
+                  <li><img src="./src/img/icons/twitter.svg" height="30px" width="auto"> <a href="http://twitter.com">Twitter</a></li>
+                  <li><img src="./src/img/icons/github.svg" height="30px" width="auto"> <a href="https://github.com/NikSuuh/">GitHub</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <!-- Profile -->
+    <section class="perfil-usuario">
+        <div class="contenedor-perfil">
+            <div class="portada-perfil" style="background-image: url('./src/img/galaxia2.jpg');">
+                <div class="avatar-perfil">
+                    <img src="./src/img/jotaro.jpg" alt="img">
+                </div>
+                <div class="datos-perfil">
+                    <p class="titulo-usuario">Luque Facundo Nicolas</p>
+                    <p class="ocupacion">Junior FullStack Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="border-light border-3 opacity-25">
+    <!-- Navegador -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-around d-grid gap-2 flex-wrap">
+                <a class="btn btn-lg btn-light btn-outline-secondary text-nowrap flex-fill" href="#aboutme" role="button">Sobre mi</a>
+                <a class="btn btn-lg btn-light btn-outline-secondary flex-fill" href="#education" role="button">Educacion</a>
+                <a class="btn btn-lg btn-light btn-outline-secondary flex-fill" href="#experience" role="button">Experiencia</a>
+                <a class="btn btn-lg btn-light btn-outline-secondary flex-fill" href="#skills" role="button">Habilidades</a>
+                <a class="btn btn-lg btn-light btn-outline-secondary flex-fill" href="#projects" role="button">Proyectos</a>
+                <a class="btn btn-lg btn-light btn-outline-secondary flex-fill" href="#contactme" role="button">Contacto</a>
+            </div>
+        </div>
+    </div>
+    <hr class="border-light border-3 opacity-25">
+    <!-- Mostrador -->
+    <div class="container-fluid">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/5d/2d/da/5d2ddabcd63672366c757927a356f0a7.gif" class="mx-auto d-block w-75" width="500px" height="500px" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/5a/4c/96/5a4c9607855f10097f6615fa51e1f1dd.gif" class="mx-auto d-block w-75" width="500px" height="500px" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/b2/6a/e7/b26ae706abd14e807528a3e65b24cf7d.gif" class="mx-auto d-block w-75" width="500px" height="500px" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <hr class="border-light border-3 opacity-25">
+    <!-- Sobre mi -->
+    <div class="container-fluid">
+        <p class="text-white text-center fs-1" id="aboutme">SOBRE MI</p>
+        <div class="card">
+            <div class="card-header">
+              Resumen
+            </div>
+            <div class="card-body">
+              <p class="card-text">Mi nombre es Luque Facundo Nicolas, tengo 21 años, soy Programador Web FullStack Junior y estudiante de Ingenieria en Sistemas Informaticos en la <a href="https://www.unaj.edu.ar">UNAJ</a> (Universidad Nacional Arturo Jauretche).</p>
+              <p>Soy un programador novato en busca de conocimiento, aptitudes y poder reforzar mis habilidades. Tengo conocimientos en lenguajes de programacion como Python y Java, conocimientos en desarrollo Web Front-end (Html, CSS, JavaScript, Angular, Bootstrap) y tambien en desarrollo Web Back-End (MySql, NodeJS, React).</p>
+
+              <p class="text-center fs-2 fw-bolder">Si quieres saber mas de mi...</p>
+              <div class="container-fluid col-12 d-flex justify-content-around d-grid gap-2 flex-wrap">
+                <p>
+                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#myhistory" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Mi Historia
+                    </a>
+                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#hobbies" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Hobbies/Intereses
+                    </a>
+                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#future" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Futuro
+                    </a>
+                  </p>
+                  <div class="collapse" id="myhistory">
+                    <div class="card mb-3">
+                        <img src="./src/img/galaxia.jpg" class="card-img-top" width="500px" height="500px">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#myhistory" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Cerrar esta ventana
+                          </a>
+                    </div>
+                  </div>
+                  <div class="collapse" id="hobbies">
+                    <div class="card mb-3">
+                        <img src="./src/img/galaxia.jpg" class="card-img-top" width="500px" height="500px">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#hobbies" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Cerrar esta ventana
+                        </a>
+                    </div>
+                  </div>
+                  <div class="collapse" id="future">
+                    <div class="card mb-3">
+                        <img src="./src/img/galaxia.jpg" class="card-img-top" width="500px" height="500px">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#future" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Cerrar esta ventana
+                          </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr class="border-light border-3 opacity-25">
+    <!-- Educacion -->
+    <div class="container-fluid">
+        <p class="text-white text-center fs-1" id="education">EDUCACION</p>
+        <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./src/img/ESB n6.png" class="my-auto img-thumbnail rounded-start" alt="...">
+                <p class="fs-6 text-center">Imagen tomada desde GoogleMaps</p>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Escuela Primaria</h3>
+                  <p>Nombre: ESCUELA Nº6 "DR. SALVADOR SALLARES"</p>
+                  <p>Año de ingreso/egreso: 2007-2012</p>
+                  <p>Estado: Egresado</p>
+                  <p>Duracion: 6 años</p>
+                  <a class="btn btn-dark" href="https://www.infoescuelas.com/argentina/buenos-aires/escuela-secundaria-basica-no53-en-florencio-varela/" role="button">
+                    Mas informacion sobre el establecimiento
+                  </a> 
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-4 my-auto">
+                <img src="./src/img/ESB n7.png" class="img-thumbnail rounded-start" alt="...">
+                <p class="fs-6 text-center">Imagen tomada desde GoogleMaps</p>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Escuela Secundaria</h3>
+                  <p>Nombre: Escuela SECUNDARIA BASICA Nº 53</p>
+                  <p>Año de ingreso/egreso: 20013-2018</p>
+                  <p>Estado: Egresado</p>
+                  <p>Duracion: 6 años</p>
+                  <p>Promedio: 8.93 (Ocho con 93/100)</p>
+                  <p>Titulo: Titulo de Bachiller En Ciencias Naturales</p>
+                  <a class="btn btn-dark" href="https://www.infoescuelas.com/argentina/buenos-aires/escuela-secundaria-basica-no53-en-florencio-varela/" role="button">
+                    Mas informacion sobre el establecimiento
+                  </a> 
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 100%;">
+          <div class="row g-0">
+            <div class="col-md-4 my-auto">
+              <img src="./src/img/Sede-Central-UNAJ.jpg" class="img-thumbnail rounded-start" alt="...">
+              <p class="fs-6 text-center">Imagen tomada desde Google</p>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title text-center">Universidad</h3>
+                <p>Nombre: Universidad Nacional Arturo Jauretche</p>
+                <p>Año de ingreso/egreso: 2019/----</p>
+                <p>Estado: En curso</p>
+                <p>Duracion: 5 años</p>
+                <p>Carrera: Ingenieria en sistemas informaticos</p>
+                <p>Titulos a obtener: Ingeniero en Informática y Analista Programador</p>
+                <a class="btn btn-dark" href="https://www.unaj.edu.ar" role="button">
+                  Mas informacion sobre el establecimiento
+                </a> 
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <hr class="border-light border-3 opacity-25">
+    <!-- Experiencia -->
+    <div class="container-fluid">
+      <p class="text-white text-center fs-1" id="experience">Experiencia</p>
+      <div class="container-fluid d-flex gap-3 flex-wrap flex-sm-nowrap justify-content-between">
+        <div class="card">
+          <img src="./src/img/galaxia2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Despues lo hago</h5>
+            <p class="card-text">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+            <a href="#" class="btn btn-dark">Mas informacion</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./src/img/galaxia2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Despues lo hago</h5>
+            <p class="card-text">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+            <a href="#" class="btn btn-dark">Mas informacion</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./src/img/galaxia2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Despues lo hago</h5>
+            <p class="card-text">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+            <a href="#" class="btn btn-dark">Mas informacion</a>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <hr class="border-light border-3 opacity-25">
+    <!-- Habilidades -->
+    <div class="container-fluid">
+      <p class="text-white text-center fs-1" id="skills">Habilidades</p>
+      <div class="container-fluid bg-light rounded">
+        <div class="container-fluid rounded">
+          <div class="progress"></div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+          </div>
+          <p>Code</p>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+          </div>
+          <p class="pt-3">Ilustracion</p>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+          </div>
+          <p class="pt-3">Animacion</p>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 56%"></div>
+          </div>
+          <p class="pt-3">Diseño</p>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+          </div>
+          <br/>
+      </div>
+    </div>
+    <!-- Proyectos -->
+    <div class="container-fluid">
+      <p class="text-white text-center fs-1" id="projects">Proyectos</p>
+      <div class="container-fluid d-flex gap-3 flex-wrap flex-sm-nowrap justify-content-between">
+        <div class="card">
+          <img src="./src/img/galaxia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Despues lo hago</h5>
+            <p class="card-text">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+            <a href="#" class="btn btn-dark">Mas informacion</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./src/img/galaxia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Despues lo hago</h5>
+            <p class="card-text">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+            <a href="#" class="btn btn-dark">Mas informacion</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./src/img/galaxia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Despues lo hago</h5>
+            <p class="card-text">Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno</p>
+            <a href="#" class="btn btn-dark">Mas informacion</a>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <hr class="border-light border-3 opacity-25">
+    <!-- Contact me -->
+    <div class="container">
+      <p class="text-white text-center fs-1" id="contactme">CONTACTO</p>
+      <div class="row">
+        <div class="col-12">
+            <form method="POST" action="contacto.php">
+                <div class="form-group">
+                    <label for="nombre" class="text-white">Nombre</label>
+                    <input name="nombre" required type="text" id="nombre"
+                        class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="correo" class="text-white">Correo electrónico</label>
+                    <input name="correo" required type="email" id="correo"
+                        class="form-control" placeholder="Tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje" class="text-white">Mensaje</label>
+                    <textarea required placeholder="Escribe tu mensaje"
+                        class="form-control" name="mensaje" id="mensaje"
+                        cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn-success btn" type="submit">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
