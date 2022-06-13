@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+body{
+  font-family: 'Akshar', sans-serif;
+  background: #1c1c1c;
+  font-size: 24px;
+}
+
+.YoProgramo_txt {
+  padding-top: 20px;
+}
+
+.perfil-usuario {
+    background: linear-gradient(#000000, transparent);
+    color: #333;
+}
+.perfil-usuario img {
+    width: 100%;
+}
+.contenedor-perfil {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.perfil-usuario .contenedor-perfil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 120px;
+}
+.perfil-usuario .portada-perfil {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 20rem;
+    margin-bottom: .5rem;
+}
+.perfil-usuario .avatar-perfil {
+    display: block;
+    width: 230px;
+    height: 230px;
+    background-color: #D9DCF1;
+    position: absolute;
+    bottom: -105px;
+    left: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
+}
+.perfil-usuario .datos-perfil {
+    position: absolute;
+    display: inline-block;
+    width: calc(100% - 230px - 8rem);
+    left: 265px;
+    bottom: -115px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    padding-bottom: 0rem;
+    padding-right: 1rem;
+}
+.perfil-usuario .titulo-usuario {
+    font-size: 2.3rem;
+    white-space: nowrap;
+    margin-bottom: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width: 780px) {
+    .perfil-usuario .contenedor-perfil {
+        width: 100%;
+        margin-bottom: 205px;
+    }
+    .perfil-usuario .avatar-perfil {
+        left: calc(50% - 115px)
+    }
+    .perfil-usuario .datos-perfil {
+        bottom: -225px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    .perfil-usuario .titulo-usuario {
+        font-size: 2.1rem;
+    }
+    .perfil-usuario .portada-perfil {
+        height: 28rem;
+    }
+
+    .perfil-usuario .menu-perfil {
+        margin-top: 2rem;
+    }
+    .perfil-usuario .icono-perfil {
+        display: inline-block;
+    }
+}
